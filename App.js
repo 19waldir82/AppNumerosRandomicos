@@ -13,11 +13,17 @@ const geraNumeroAleatório = () => {
 const App = () => {
   return (
   <View>
-    <Text>Gerador De Números Aleatórios</Text>
-    <Text>oi</Text>
+    <Text style={style.texto}>Gerador De Números Aleatórios</Text>
     <Button title="Gerar Número Aleatório" onPress={geraNumeroAleatório}></Button>
   </View>
   );
 };
+
+const style= {
+  texto: {
+    fontSize: 20,
+    marginBottom: 30,
+  }
+}
 
 export default App;
